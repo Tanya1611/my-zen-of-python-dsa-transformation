@@ -1,18 +1,27 @@
-# Welcome! 👋
+# 🧘 Zen of DSA Journey in Python
 
-This repository documents my journey of learning Data Structures & Algorithms using Python from the ground up.
+> **"The expert in anything was once a beginner who refused to quit."** — Helen Hayes
 
-I'm focusing on building strong fundamentals before advancing to complex algorithms. Every commit reflects a concept I've learned, practiced, and understood.
+Welcome!
 
-What You'll Find Here
-- Python Fundamentals
-- Pattern Programming
-- Data Structures
-- Algorithmic Problem Solving
-- Notes & Key Learnings
+This repository is my public learning journal of mastering **Python**, **Data Structures**, and **Algorithms**—one concept, one problem, and one commit at a time.
 
-# Current Focus
-- Python Basics
-- Pattern Programming
-- Problem Solving
-- Data Structures & Algorithms
+Rather than chasing the number of questions solved, I'm focused on building strong fundamentals, writing clean code, and developing the problem-solving mindset required to become a better software and AI engineer.
+
+## 📚 Repository Roadmap
+
+* 🐍 Python Fundamentals
+* 🎨 Pattern Programming
+* 📦 Data Structures
+* 🧩 Algorithms
+* ⚡ Time & Space Complexity
+
+## 💡 Philosophy
+
+Every solution is an opportunity to learn—not just to solve.
+
+This repository values:
+
+* Understanding over memorization
+* Consistency over intensity
+* Progress over perfection
