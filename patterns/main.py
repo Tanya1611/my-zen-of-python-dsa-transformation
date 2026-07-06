@@ -1,5 +1,5 @@
 def main():
-    print("Hello from pattern-1!")
+    print("Hello from patterns!")
 
 
 if __name__ == "__main__":
