@@ -2,12 +2,6 @@ version = 1
 revision = 3
 requires-python = ">=3.13"
 
-[manifest]
-members = [
-    "my-zen-of-python-journey",
-    "pattern-1",
-]
-
 [[package]]
 name = "certifi"
 version = "2026.6.17"
@@ -93,11 +87,6 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [{ name = "requests", specifier = ">=2.34.2" }]
-
-[[package]]
-name = "pattern-1"
-version = "0.1.0"
-source = { virtual = "pattern-1" }
 
 [[package]]
 name = "requests"
