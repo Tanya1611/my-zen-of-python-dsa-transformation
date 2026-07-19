@@ -10,7 +10,7 @@ Explanation: The last occurrence of 2 is at index 3.
 
 '''
 
-# Approach: Iterate array -> Match the target value -> Return index => Linear Search
+# Approach: Iterate array from the end -> Match the target value -> Return index => Linear Search
 
 def last_occurrence(arr: list[int], n: int, t: int) -> int:
     for i in range(n-1, -1, -1):
