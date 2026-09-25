@@ -14,7 +14,12 @@ Explanation : All the zeros are moved to the end and non-negative integers are m
 '''
 
 def moveZeroes(arr):
-        
+
+    '''   
+    Brute Force: Using temporary array
+    Time Complexity: O(N), we can move all zeroes to end in linear time.
+    Space Complexity: O(N), additional space used for temporary array. 
+    
     temp = [0] * len(arr)
     index = 0
 
@@ -29,6 +34,25 @@ def moveZeroes(arr):
         arr[i] = temp[i]
 
     return arr
+    '''
+
+    # Better Approach: Two Traversals
+    # Time Complexity: O(N), we can move add zeroes to end in linear time.
+    # Space Complexity: O(1), no additional space used.
+    count = 0
+
+    # If the element is non-zero, replace the element at index 'count' with this element and increment count.
+    for i in range(len(arr)):
+        if arr[i] != 0:
+            arr[count] = arr[i]
+            count += 1
+
+    # Make all remaining elements 0 from count to end.
+    while count < len(arr):
+        arr[count] = 0
+        count += 1
+    return arr
+
 
 
 n = int(input("Enter number of elements in an array: "))
@@ -40,8 +64,6 @@ for num in result:
     print(num, end=" ")
 
 '''
-Time Complexity: O(N), we can move all zeroes to end in linear time.
-Space Complexity: O(N), additional space used for temporary array.
 
 Output:
 Enter number of elements in an array: 5
