@@ -34,7 +34,7 @@ def moveZeroes(arr):
         arr[i] = temp[i]
 
     return arr
-    '''
+    
 
     # Better Approach: Two Traversals
     # Time Complexity: O(N), we can move add zeroes to end in linear time.
@@ -52,7 +52,22 @@ def moveZeroes(arr):
         arr[count] = 0
         count += 1
     return arr
+    '''
 
+    # Optimal Approach: Single Traversal
+    # Time Complexity: O(N), swapping zero with non zero to end in linear time.
+    # Space Complexity: O(1), no additional space used.
+    
+    count = 0
+    
+    for i in range(len(arr)):
+        
+        # If the current element is non-zero
+        if arr[i] != 0:
+            arr[i], arr[count] = arr[count], arr[i]
+            
+            count += 1
+    return arr
 
 
 n = int(input("Enter number of elements in an array: "))
