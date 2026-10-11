@@ -14,6 +14,18 @@ Input: "Help! Help me, please.
 "Output: {'help': 2, 'me': 1, 'please': 1}Example 3: Empty text inputInput: ""Output: {}
 '''
 
+# Way 1
+from collections import Counter
+import re
+
+def count_words_pythonic(paragraph):
+    words = re.findall(r"\w+", paragraph.lower())
+    return dict(Counter(words))
+
+
+'''
+# Way 2
+
 def count_words(paragraph):
     # Remove basic punctuation and lower the case
     for punctuation in [".", ",", "!", "?", "-", ";"]:
@@ -29,10 +41,12 @@ def count_words(paragraph):
             word_count[word] = 1
             
     return word_count
+'''
 
 
 text_sample = input("Enter the string: ")
-print(count_words(text_sample))
+#print(count_words(text_sample))
+print(count_words_pythonic(text_sample))
 
 # Output: 
 # Enter the string: Betty bought a Butter, but butter was bitter.              
